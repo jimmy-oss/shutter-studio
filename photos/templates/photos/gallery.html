@@ -37,13 +37,14 @@ integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeM
     {% for photo in photos %}
        <div class="col-md-4">
         <div class="card">
-          <img class="image-thumbail" src="https://www.theblondeabroad.com/wp-content/uploads/2018/12/DSCF9028-1.05.57-PM.jpg" alt="Card image cap">
+          <img class="image-thumbail" src="{{photo.image.url}}" alt="Card image cap">
           <div class="card-body">
             <small>Category:Travel</small>
             <a href="{% url 'photo' 5 %}" class="btn btn-outline-dark btn-sm m-1">View</a>
           </div>
         </div>
         {% empty %}
+        <h3>No Photos😔 </h3>
         {% endfor %}
        </div>
    </div>
