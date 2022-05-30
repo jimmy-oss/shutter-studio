@@ -10,6 +10,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
 
 </head>
 
@@ -23,30 +24,30 @@
                     <form method='POST' action="" enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="form-group m-3">
-                            <label>Description</label>
+                            <label style="font-family: 'Bubblegum Sans', cursive; font-size:20px">Description</label>
                             <input required name="description" type="text" placeholder="Enter a description"
                                 class="form-control">
                         </div>
                         <div class="form-group m-3">
-                            <label>Select a category</label>
+                            <label style="font-family: 'Bubblegum Sans', cursive; font-size:20px">Select a category</label>
                             <select name="category" class="form-control">
                                 <option value='none'>Select a category...</option>
                                 {% for category in categories %}
-                                <option value='{{category.id}}'>{{category.name}}</option>
+                                <option value='{{category.id}}' style="font-family: 'Bubblegum Sans', cursive; font-size:20px">{{category.name}}</option>
                                 {% endfor %}
                             </select>
                         </div>
                         <div class="form-group m-3">
-                            <label>Create a new category</label>
+                            <label style="font-family: 'Bubblegum Sans', cursive; font-size:20px">Create a new category</label>
                             <input name="category_new" type="text" placeholder="Create a new category"
                                 class="form-control">
                         </div>
 
                         <div class="form-group m-3">
-                            <label>Upload image</label>
+                            <label style="font-family: 'Bubblegum Sans', cursive; font-size:20px">Upload image</label>
                             <input required name="images" type="file" multiple class="form-control-file">
                         </div>
-                        <button type='submit' class="btn btn-primary m-3">Submit</button>
+                        <button type='submit' class="btn btn-primary m-3" style="font-family:serif; font-size:20px">Submit</button>
                     </form>
                 </div>
             </div>
