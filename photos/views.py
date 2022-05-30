@@ -10,7 +10,7 @@ def gallery (request):
      
 def viewPhoto (request, pk):
        photo = Photo.objects.get(id=pk)
-       return render(request,'photos/photo.html',{})
+       return render(request,'photos/photo.html',{'photo':photo})
   
 def addPhoto (request):
        return render(request,'photos/add.html')
