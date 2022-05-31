@@ -13,7 +13,11 @@ crossorigin="anonymous">
 <style>
   .image-thumbail{
            height: 200px;
-         object-fit: cover;
+          object-fit: cover;
+  }
+  .list-group-item a{
+       text-decoration: none;
+       color: black;
   }
 
 </style>
@@ -26,9 +30,9 @@ crossorigin="anonymous">
      Categories
    </div>
    <ul class="list-group list-group-flush">
-     <li class="list-group-item" style="font-family: 'Bubblegum Sans', cursive; font-size:18px">All</li>
+     <li class="list-group-item" style="font-family: 'Bubblegum Sans', cursive; font-size:18px"><a href="{% url 'gallery' %}">All</a></li>
      {%  for category in categories %}
-     <li class="list-group-item" style="font-family: 'Bubblegum Sans', cursive; font-size:18px">{{category.name}}</li>
+     <li class="list-group-item" style="font-family: 'Bubblegum Sans', cursive; font-size:18px"><a href="{% url 'gallery' %}?category={{category.name}}">{{category.name}}</li></a>
      {% endfor %}
      <a href="{% url 'add' %}" class="btn btn-dark btn-block btn-sm m-1" style="font-family:serif; font-size:18px">Add Photo</a>
    </ul>
