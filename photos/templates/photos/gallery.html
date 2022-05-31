@@ -20,11 +20,15 @@ crossorigin="anonymous">
        text-decoration: none;
        color: black;
   }
-
+  .background{
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+  }
+  
 </style>
 </head>
-<body class="m-5">
-   <div class="container">
+<body class="m-5" style="background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);">
+  <div class="background"> 
+   <div class="container m-1">
 <div class="row">
   <div class="col-md-3"><div class="card">
    <div class="card-header" style="font-family:serif; font-size:20px">
@@ -54,6 +58,7 @@ crossorigin="anonymous">
        {% empty %}
        <h3>No Photos😔 </h3>
        {% endfor %}
+      </div>
       </div>
   </div>
 </body>
