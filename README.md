@@ -1,6 +1,7 @@
 # 𝖘𝖍𝖚𝖙𝖙𝖊𝖗-𝖘𝖙𝖚𝖉𝖎𝖔💞
 
 ![Screen Shot 2022-06-02 at 02 24 46](https://user-images.githubusercontent.com/62022158/171517801-4795921b-ccb1-435d-afde-cbcc9680b8d2.png)
+
 ![Screen Shot 2022-06-02 at 02 25 02](https://user-images.githubusercontent.com/62022158/171517879-391f247a-c5f2-4e59-aee8-fe4282bdc57a.png)
 The 𝖘𝖍𝖚𝖙𝖙𝖊𝖗-𝖘𝖙𝖚𝖉𝖎𝖔💞 web application displays photos from various categories such as Travel for others to see, the user is able to copy the links from their favourite photos and share or search on them online.
 
