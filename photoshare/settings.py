@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hosg&cr2i9&b6q15n#g7(ws8(918$*ky_yjibp+i27bvqcbz16
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://shutter-studio.herokuapp.com']
 
 
 # Application definition
