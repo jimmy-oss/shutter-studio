@@ -1,5 +1,5 @@
 #!/Users/apple2020/Desktop/photoshare/virtual/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'gunicorn==19.0.0','console_scripts','gunicorn'
+# EASY-INSTALL-ENTRY-SCRIPT: 'gunicorn==19.0.0','console_scripts','gunicorn_paster'
 import re
 import sys
 
@@ -30,4 +30,4 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(load_entry_point('gunicorn==19.0.0', 'console_scripts', 'gunicorn')())
+    sys.exit(load_entry_point('gunicorn==19.0.0', 'console_scripts', 'gunicorn_paster')())
