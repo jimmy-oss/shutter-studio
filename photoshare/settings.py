@@ -10,12 +10,15 @@ import os
 from pathlib import Path
 import django_heroku
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from decouple import config,Csv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+ 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -30,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
    'photos.apps.PhotosConfig',
+   'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -64,6 +68,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'photoshare.wsgi.application'
 
+ #adding config
+cloudinary.config( 
+  cloud_name = "dc6ecphjr", 
+  api_key = "435424479942614", 
+  api_secret = "Khp8NaCbHKQs4_GKBLdMv1YnJrc" 
+)
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
