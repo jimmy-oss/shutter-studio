@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-hosg&cr2i9&b6q15n#g7(ws8(918$*ky_yjibp+i27bvqcbz16
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shutter-studio.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -77,11 +77,9 @@ WSGI_APPLICATION = 'photoshare.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'dcabdgkk3mu6ll',
-        'USER': 'aqskpafkfvskjt',
-       'PASSWORD':'05e389ea2ccdcc72772ce1aa6db613b78f3fc1f5bbe4d1138b7c232405db86db',
-       'HOST':'ec2-34-231-221-151.compute-1.amazonaws.com',
-       'PORT': '5432',
+         'NAME': 'photoshare',
+        'USER': 'apple2020',
+       'PASSWORD':'apple2020',
     }
 }
 
