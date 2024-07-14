@@ -37,10 +37,13 @@ To use the application you should have python3 and django latest version install
 Create an `.env` and add the following.
 
 ```
+MODE='dev'
 SECRET_KEY='<Secret_key>'
-DBNAME='tribune'
-USER='<Username>'
-PASSWORD='<password>'
+DB_NAME=='tribune'
+DB_USER='<Username>'
+DB_PASSWORD='<password>'
+DB_HOST= 'localhost'
+ALLOWED_HOSTS='localhost, 127.0.0.1' 
 DEBUG=True
 
 EMAIL_USE_TLS=True
